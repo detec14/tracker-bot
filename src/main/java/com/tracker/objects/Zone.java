@@ -3,19 +3,28 @@ package com.tracker.objects;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Zone {
     private String name;
+    @JsonProperty("name-map")
+    private String nameMap;
     private ArrayList<System> systems;
     private Space space;
 
     Zone() {
         this.name = null;
+        this.nameMap = null;
         this.systems = new ArrayList<>();
         this.space = Space.Unknown;
     }
 
     public String getName() {
         return this.name;
+    }
+
+    public String getNameMap() {
+        return this.nameMap;
     }
     
     public ArrayList<System> getSystems() {

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.tracker.commands.DisplayCommand;
@@ -113,10 +114,8 @@ public class Watcher implements Runnable {
             tracker.clearEnrolled();
         }
 
-        for (int s = 0; s < msg.length(); s += 1950) {
-            this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
-               .sendMessage(msg.substring(s, Math.min(s + 1950, msg.length()))).queue();
-        }
+        this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
+               .sendMessage(msg).queue();
 
         return true;
     }
@@ -148,19 +147,30 @@ public class Watcher implements Runnable {
         Collections.shuffle(freeZones);
 
         for (Tracker tracker : freeTrackers) {
+            ArrayList<String> mapNames = this.config.getStatic().getAllZoneMapNames();
+            String zones = "";
+
             for (Zone zone : freeZones.subList(i, i + zonesPerTracker)) {
                 tracker.addZone(zone.getName());
+
+                zones += "- " + zone.getName() + " (" + zone.getNameMap().toUpperCase() + "): ";
+                zones += zone.getSystems().stream().map(Object::toString)
+                    .collect(Collectors.joining(", "));
+                zones += "\n";
+
+                mapNames.remove(zone.getNameMap());
             }
             i += zonesPerTracker;
-        }
+            
+            String url = DisplayCommand.getMapUrl() + "/?zone=";
+            url += mapNames.stream().map(Object::toString)
+                .collect(Collectors.joining("&zone="));
+            String msg = this.server.retrieveMemberById(tracker.getId()).complete().getAsMention();
+            msg += ", your assigned zones/systems:\n" + zones;
+            msg += "\nHere the systems map with highlighted zones: " + url;
 
-        String msg = "Current assigned systems:\n";
-        
-        msg += DisplayCommand.generateTrackersSummary(this.config);
-
-        for (int s = 0; s < msg.length(); s += 1950) {
             this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
-                .sendMessage(msg.substring(s, Math.min(s + 1950, msg.length()))).queue();
+                .sendMessage(msg).queue();
         }
 
         return true;

@@ -1,6 +1,7 @@
 package com.tracker.objects;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class ConfigStatic {
     private ArrayList<Zone> zones;
@@ -30,5 +31,11 @@ public class ConfigStatic {
         }
 
         return systems;
+    }
+
+    public ArrayList<String> getAllZoneMapNames() {
+        return new ArrayList<>(this.zones.stream()
+            .map(Zone::getNameMap).collect(Collectors.toList())
+            .stream().distinct().collect(Collectors.toList()));
     }
 }

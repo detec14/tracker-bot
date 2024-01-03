@@ -39,6 +39,7 @@
                 }
             ],
             "name": "Romulan-3",
+            "name-map": "r3",
             "space": "Romulan"
         },
         {
@@ -105,6 +106,7 @@
                 }
             ],
             "name": "Romulan-2",
+            "name-map": "r2",
             "space": "Romulan"
         },
         {
@@ -226,6 +228,7 @@
                 }
             ],
             "name": "Romulan-1",
+            "name-map": "r1",
             "space": "Romulan"
         },
         {
@@ -262,6 +265,7 @@
                 }
             ],
             "name": "Independent-10.1",
+            "name-map": "i10_1",
             "space": "Independent"
         },
         {
@@ -298,6 +302,7 @@
                 }
             ],
             "name": "Independent-10.2",
+            "name-map": "i10_2",
             "space": "Independent"
         },
         {
@@ -324,6 +329,7 @@
                 }
             ],
             "name": "Independent-11.1",
+            "name-map": "i11_1",
             "space": "Independent"
         },
         {
@@ -360,6 +366,7 @@
                 }
             ],
             "name": "Independent-10.3",
+            "name-map": "i10_3",
             "space": "Independent"
         },
         {
@@ -386,6 +393,7 @@
                 }
             ],
             "name": "Independent-11.2",
+            "name-map": "i11_2",
             "space": "Independent"
         },
         {
@@ -412,6 +420,7 @@
                 }
             ],
             "name": "Independent-8.1",
+            "name-map": "i8",
             "space": "Independent"
         },
         {
@@ -543,6 +552,7 @@
                 }
             ],
             "name": "Independent-8.0",
+            "name-map": "i8",
             "space": "Independent"
         },
         {
@@ -674,6 +684,7 @@
                 }
             ],
             "name": "Independent-7.0",
+            "name-map": "i7",
             "space": "Independent"
         },
         {
@@ -725,6 +736,7 @@
                 }
             ],
             "name": "Independent-7.1",
+            "name-map": "i7",
             "space": "Independent"
         },
         {
@@ -831,6 +843,7 @@
                 }
             ],
             "name": "Independent-9",
+            "name-map": "i9",
             "space": "Independent"
         },
         {
@@ -952,6 +965,7 @@
                 }
             ],
             "name": "Independent-4",
+            "name-map": "i4",
             "space": "Independent"
         },
         {
@@ -1083,6 +1097,7 @@
                 }
             ],
             "name": "Independent-3.0",
+            "name-map": "i3",
             "space": "Independent"
         },
         {
@@ -1109,6 +1124,7 @@
                 }
             ],
             "name": "Independent-3.1",
+            "name-map": "i3",
             "space": "Independent"
         },
         {
@@ -1155,6 +1171,7 @@
                 }
             ],
             "name": "Independent-6.1",
+            "name-map": "i6",
             "space": "Independent"
         },
         {
@@ -1286,6 +1303,7 @@
                 }
             ],
             "name": "Independent-6.0",
+            "name-map": "i6",
             "space": "Independent"
         },
         {
@@ -1317,6 +1335,7 @@
                 }
             ],
             "name": "Outlaw-1",
+            "name-map": "o1",
             "space": "Outlaw"
         },
         {
@@ -1448,6 +1467,7 @@
                 }
             ],
             "name": "Independent-5.0",
+            "name-map": "i5",
             "space": "Independent"
         },
         {
@@ -1474,6 +1494,7 @@
                 }
             ],
             "name": "Independent-5.1",
+            "name-map": "i5",
             "space": "Independent"
         },
         {
@@ -1510,6 +1531,7 @@
                 }
             ],
             "name": "Independent-2.1",
+            "name-map": "i2",
             "space": "Independent"
         },
         {
@@ -1641,6 +1663,7 @@
                 }
             ],
             "name": "Independent-2.0",
+            "name-map": "i2",
             "space": "Independent"
         },
         {
@@ -1772,6 +1795,7 @@
                 }
             ],
             "name": "Independent-1.0",
+            "name-map": "i1",
             "space": "Independent"
         },
         {
@@ -1798,6 +1822,7 @@
                 }
             ],
             "name": "Independent-1.1",
+            "name-map": "i1",
             "space": "Independent"
         },
         {
@@ -1864,6 +1889,7 @@
                 }
             ],
             "name": "Federation-2",
+            "name-map": "f2",
             "space": "Federation"
         },
         {
@@ -1905,6 +1931,7 @@
                 }
             ],
             "name": "Federation-3",
+            "name-map": "f3",
             "space": "Federation"
         },
         {
@@ -2036,6 +2063,7 @@
                 }
             ],
             "name": "Federation-1.0",
+            "name-map": "f1",
             "space": "Federation"
         },
         {
@@ -2072,6 +2100,7 @@
                 }
             ],
             "name": "Federation-1.1",
+            "name-map": "f1",
             "space": "Federation"
         },
         {
@@ -2098,6 +2127,7 @@
                 }
             ],
             "name": "Independent-12",
+            "name-map": "i12",
             "space": "Independent"
         },
         {
@@ -2229,6 +2259,7 @@
                 }
             ],
             "name": "klingon-1.0",
+            "name-map": "k1",
             "space": "Klingon"
         },
         {
@@ -2255,6 +2286,7 @@
                 }
             ],
             "name": "klingon-1.1",
+            "name-map": "k1",
             "space": "Klingon"
         },
         {
@@ -2321,6 +2353,7 @@
                 }
             ],
             "name": "klingon-2",
+            "name-map": "k2",
             "space": "Klingon"
         },
         {
@@ -2362,6 +2395,7 @@
                 }
             ],
             "name": "klingon-3",
+            "name-map": "k3",
             "space": "Klingon"
         }
     ]

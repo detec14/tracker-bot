@@ -95,18 +95,18 @@ public class DisplayCommand implements ICommand {
         return null;
     }
 
-    public static String generateTrackersSummary(Config config) {
+    private String generateTrackersSummary() {
         String output = "";
 
         output += "```\n";
         output += "Tracker              Req/Day    Enrolled   Assignment\n";
         output += "==================== ========== ========== ========================================\n";
-        for (Tracker tracker : config.getDynamic().getTrackers()) {
+        for (Tracker tracker : this.config.getDynamic().getTrackers()) {
             String systems = "";
             if (tracker.getZones() != null) {
                 for (String zone : tracker.getZones()) {
                     systems += zone + " [";
-                    systems += config.getStatic().findZone(zone).getSystems()
+                    systems += this.config.getStatic().findZone(zone).getSystems()
                         .stream().map(Object::toString)
                         .collect(Collectors.joining(", "));
                     systems += "], ";
@@ -133,13 +133,13 @@ public class DisplayCommand implements ICommand {
         return output;
     }
 
-    public static String generateTargetsSummary(Config config) {
+    private String generateTargetsSummary() {
         String output = "";
 
         output += "```\n";
         output += "Target               Spotted    System                     Time\n";
         output += "==================== ========== ========================== ========================\n";
-        for (Target target : config.getDynamic().getTargets()) {
+        for (Target target : this.config.getDynamic().getTargets()) {
             output += String.format("%-20s %-10s %-26s %s\n", 
                 target.getName(), target.isSpotted(),
                 (target.getSystem() == null) ? "-" : target.getSystem(),
@@ -151,14 +151,14 @@ public class DisplayCommand implements ICommand {
         return output;
     }
 
-    public static String generateZoneSummary(Config config, String zone) {
-       String output = "";
+    private String generateZoneSummary(String zone) {
+        String output = "";
 
         output += "```\n";
         output += "Zone: " + zone + "\n";
         output += "===================================================================================\n";
 
-        output += config.getStatic().findZone(zone).getSystems()
+        output += this.config.getStatic().findZone(zone).getSystems()
             .stream().map(Object::toString).collect(Collectors.joining(", "));
 
         output += "```";
@@ -177,18 +177,22 @@ public class DisplayCommand implements ICommand {
     }
 
     private void sendTrackersSummary(SlashCommandInteractionEvent event) {
-        sendMessageIntoChannel(generateTrackersSummary(this.config), event);
+        sendMessageIntoChannel(generateTrackersSummary(), event);
     }
 
     private void sendTargetsSummary(SlashCommandInteractionEvent event) {
-        sendMessageIntoChannel(generateTargetsSummary(this.config), event);
+        sendMessageIntoChannel(generateTargetsSummary(), event);
     }
 
     private void sendSystemsPicture(SlashCommandInteractionEvent event) {
-        event.reply("Check: https://picklemap.000webhostapp.com").queue();
+        event.reply("Check: " + getMapUrl()).queue();
     }
 
     private void sendZoneSummary(SlashCommandInteractionEvent event, String zone) {
-        sendMessageIntoChannel(generateZoneSummary(this.config, zone), event);
+        sendMessageIntoChannel(generateZoneSummary(zone), event);
+    }
+
+    public static String getMapUrl() {
+        return "https://picklemap.000webhostapp.com";
     }
 }
