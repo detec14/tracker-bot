@@ -1,0 +1,5 @@
+You need to create a file in `assets` directory called `config.json` with the following content:
+
+{
+    "bot-token" : "<bot-token>"
+}

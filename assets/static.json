@@ -1,0 +1,2368 @@
+{
+    "zones": [
+        {
+            "systems": [
+                {
+                    "name": "Timvir",
+                    "id": 657564833,
+                    "warp": 255
+                },
+                {
+                    "name": "Solis Alpha",
+                    "id": 1679021392,
+                    "warp": 500
+                },
+                {
+                    "name": "Solis Omega",
+                    "id": 889393492,
+                    "warp": 500
+                },
+                {
+                    "name": "Remme",
+                    "id": 999778983,
+                    "warp": 185
+                },
+                {
+                    "name": "Mons Mortis",
+                    "id": 605602410,
+                    "warp": 285
+                },
+                {
+                    "name": "Lyklaset",
+                    "id": 1314755693,
+                    "warp": 230
+                },
+                {
+                    "name": "Kalalisko",
+                    "id": 1658706096,
+                    "warp": 355
+                }
+            ],
+            "name": "Romulan-3",
+            "space": "Romulan"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Rowla",
+                    "id": 2125367863,
+                    "warp": 64
+                },
+                {
+                    "name": "Ortexa",
+                    "id": 683807779,
+                    "warp": 75
+                },
+                {
+                    "name": "Jorda",
+                    "id": 829165184,
+                    "warp": 160
+                },
+                {
+                    "name": "Elvros",
+                    "id": 245752118,
+                    "warp": 120
+                },
+                {
+                    "name": "Yina",
+                    "id": 1128199135,
+                    "warp": 120
+                },
+                {
+                    "name": "Inaara",
+                    "id": 1795645877,
+                    "warp": 75
+                },
+                {
+                    "name": "Corvidae",
+                    "id": 1916359164,
+                    "warp": 75
+                },
+                {
+                    "name": "Esto",
+                    "id": 14444521,
+                    "warp": 75
+                },
+                {
+                    "name": "Nuva",
+                    "id": 246615176,
+                    "warp": 120
+                },
+                {
+                    "name": "Ami Bera",
+                    "id": 781961898,
+                    "warp": 75
+                },
+                {
+                    "name": "Ardaji",
+                    "id": 1072986698,
+                    "warp": 120
+                },
+                {
+                    "name": "Ballion",
+                    "id": 1844514955,
+                    "warp": 120
+                }
+            ],
+            "name": "Romulan-2",
+            "space": "Romulan"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Oppidum Pulvis",
+                    "id": 1297181644,
+                    "warp": 24
+                },
+                {
+                    "name": "Tufem",
+                    "id": 158586489,
+                    "warp": 18
+                },
+                {
+                    "name": "Mada",
+                    "id": 1476675021,
+                    "warp": 18
+                },
+                {
+                    "name": "Rosec",
+                    "id": 2038174376,
+                    "warp": 18
+                },
+                {
+                    "name": "Posel",
+                    "id": 1389910171,
+                    "warp": 18
+                },
+                {
+                    "name": "Jaq",
+                    "id": 44494918,
+                    "warp": 26
+                },
+                {
+                    "name": "Lloyd",
+                    "id": 858232932,
+                    "warp": 26
+                },
+                {
+                    "name": "Lempo",
+                    "id": 776435049,
+                    "warp": 26
+                },
+                {
+                    "name": "Altanea",
+                    "id": 3712908,
+                    "warp": 38
+                },
+                {
+                    "name": "Strezhi",
+                    "id": 82872624,
+                    "warp": 19
+                },
+                {
+                    "name": "Nipaj",
+                    "id": 113352984,
+                    "warp": 19
+                },
+                {
+                    "name": "Rator",
+                    "id": 117464719,
+                    "warp": 20
+                },
+                {
+                    "name": "Wauoxic",
+                    "id": 168803971,
+                    "warp": 19
+                },
+                {
+                    "name": "Rooth",
+                    "id": 788343992,
+                    "warp": 19
+                },
+                {
+                    "name": "Sufiday",
+                    "id": 892844237,
+                    "warp": 18
+                },
+                {
+                    "name": "Llorrac",
+                    "id": 966644509,
+                    "warp": 18
+                },
+                {
+                    "name": "Mewudoh",
+                    "id": 1023784753,
+                    "warp": 19
+                },
+                {
+                    "name": "Vendus A",
+                    "id": 1342058302,
+                    "warp": 19
+                },
+                {
+                    "name": "Dauouuy",
+                    "id": 1396202980,
+                    "warp": 18
+                },
+                {
+                    "name": "Jeuaiei",
+                    "id": 1556190441,
+                    "warp": 19
+                },
+                {
+                    "name": "Robeton",
+                    "id": 1634013155,
+                    "warp": 26
+                },
+                {
+                    "name": "Tandorian",
+                    "id": 1649853747,
+                    "warp": 26
+                },
+                {
+                    "name": "Parka",
+                    "id": 1918573545,
+                    "warp": 26
+                }
+            ],
+            "name": "Romulan-1",
+            "space": "Romulan"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Bor",
+                    "id": 90203356,
+                    "warp": 48
+                },
+                {
+                    "name": "Kiyu",
+                    "id": 638923368,
+                    "warp": 48
+                },
+                {
+                    "name": "Nezha",
+                    "id": 117053650,
+                    "warp": 48
+                },
+                {
+                    "name": "Elzbar",
+                    "id": 1813666945,
+                    "warp": 48
+                },
+                {
+                    "name": "Vurox",
+                    "id": 1601075051,
+                    "warp": 48
+                },
+                {
+                    "name": "Ayvren",
+                    "id": 186002583,
+                    "warp": 48
+                }
+            ],
+            "name": "Independent-10.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Enning",
+                    "id": 1132113350,
+                    "warp": 53
+                },
+                {
+                    "name": "Shino",
+                    "id": 1164058390,
+                    "warp": 53
+                },
+                {
+                    "name": "Guanyin",
+                    "id": 143594630,
+                    "warp": 53
+                },
+                {
+                    "name": "Eayou",
+                    "id": 1976031045,
+                    "warp": 53
+                },
+                {
+                    "name": "Subezac",
+                    "id": 147683237,
+                    "warp": 53
+                },
+                {
+                    "name": "Xices",
+                    "id": 1490524304,
+                    "warp": 53
+                }
+            ],
+            "name": "Independent-10.2",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "S'Vona",
+                    "id": 1506690244,
+                    "warp": 70
+                },
+                {
+                    "name": "Vita Nova",
+                    "id": 495025747,
+                    "warp": 80
+                },
+                {
+                    "name": "Romashki",
+                    "id": 1186716271,
+                    "warp": 110
+                },
+                {
+                    "name": "Mayush-yush",
+                    "id": 708173724,
+                    "warp": 120
+                }
+            ],
+            "name": "Independent-11.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Roxeoun",
+                    "id": 725745965,
+                    "warp": 61
+                },
+                {
+                    "name": "Ain'Tok",
+                    "id": 10926405,
+                    "warp": 61
+                },
+                {
+                    "name": "Kuvrak",
+                    "id": 1417809072,
+                    "warp": 61
+                },
+                {
+                    "name": "Ok'cet",
+                    "id": 900739434,
+                    "warp": 61
+                },
+                {
+                    "name": "Kre'Tak",
+                    "id": 1857228856,
+                    "warp": 61
+                },
+                {
+                    "name": "Pktha",
+                    "id": 1427881630,
+                    "warp": 61
+                }
+            ],
+            "name": "Independent-10.3",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Fect",
+                    "id": 213531443,
+                    "warp": 80
+                },
+                {
+                    "name": "Beta Niobe",
+                    "id": 479900503,
+                    "warp": 80
+                },
+                {
+                    "name": "Glacii",
+                    "id": 697752211,
+                    "warp": 120
+                },
+                {
+                    "name": "Er'Tama",
+                    "id": 1108935593,
+                    "warp": 120
+                }
+            ],
+            "name": "Independent-11.2",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Madra",
+                    "id": 1922414485,
+                    "warp": 12
+                },
+                {
+                    "name": "Medua",
+                    "id": 2028145465,
+                    "warp": 12
+                },
+                {
+                    "name": "Eisenhorn",
+                    "id": 2052698931,
+                    "warp": 13
+                },
+                {
+                    "name": "Bharani",
+                    "id": 2136091294,
+                    "warp": 13
+                }
+            ],
+            "name": "Independent-8.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Kosz",
+                    "id": 937831006,
+                    "warp": 13
+                },
+                {
+                    "name": "Elona",
+                    "id": 81286,
+                    "warp": 11
+                },
+                {
+                    "name": "Deneva",
+                    "id": 1135473830,
+                    "warp": 11
+                },
+                {
+                    "name": "Wezen",
+                    "id": 464460417,
+                    "warp": 13
+                },
+                {
+                    "name": "Freyda",
+                    "id": 81397,
+                    "warp": 13
+                },
+                {
+                    "name": "Dalukerinborva",
+                    "id": 1385663190,
+                    "warp": 13
+                },
+                {
+                    "name": "Cita Laga",
+                    "id": 81354,
+                    "warp": 11
+                },
+                {
+                    "name": "Opla",
+                    "id": 81459,
+                    "warp": 13
+                },
+                {
+                    "name": "Gra",
+                    "id": 60112512,
+                    "warp": 12
+                },
+                {
+                    "name": "Gelvin",
+                    "id": 335238400,
+                    "warp": 13
+                },
+                {
+                    "name": "Ora Leraa",
+                    "id": 507279929,
+                    "warp": 13
+                },
+                {
+                    "name": "Ragnarr",
+                    "id": 543818924,
+                    "warp": 12
+                },
+                {
+                    "name": "Dle\u2019greffo",
+                    "id": 604074052,
+                    "warp": 12
+                },
+                {
+                    "name": "Atreig",
+                    "id": 719474967,
+                    "warp": 12
+                },
+                {
+                    "name": "Skyedark",
+                    "id": 910353989,
+                    "warp": 13
+                },
+                {
+                    "name": "Vemet",
+                    "id": 1012246624,
+                    "warp": 13
+                },
+                {
+                    "name": "Obilent",
+                    "id": 1083794899,
+                    "warp": 12
+                },
+                {
+                    "name": "Pune",
+                    "id": 1091871393,
+                    "warp": 13
+                },
+                {
+                    "name": "Zhang",
+                    "id": 1113049160,
+                    "warp": 13
+                },
+                {
+                    "name": "Aciben",
+                    "id": 1184282738,
+                    "warp": 13
+                },
+                {
+                    "name": "Eizeb",
+                    "id": 1316840322,
+                    "warp": 13
+                },
+                {
+                    "name": "Astrida",
+                    "id": 1490914183,
+                    "warp": 12
+                },
+                {
+                    "name": "Oltomon",
+                    "id": 1726465367,
+                    "warp": 13
+                },
+                {
+                    "name": "Bubeau",
+                    "id": 1791133099,
+                    "warp": 13
+                },
+                {
+                    "name": "Kepler-018",
+                    "id": 1854874708,
+                    "warp": 13
+                }
+            ],
+            "name": "Independent-8.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Benif",
+                    "id": 1225355489,
+                    "warp": 8
+                },
+                {
+                    "name": "Yosiqul",
+                    "id": 446076352,
+                    "warp": 8
+                },
+                {
+                    "name": "Lodum",
+                    "id": 282428991,
+                    "warp": 8
+                },
+                {
+                    "name": "Zozalin",
+                    "id": 169288075,
+                    "warp": 8
+                },
+                {
+                    "name": "Xiyia",
+                    "id": 1948120198,
+                    "warp": 8
+                },
+                {
+                    "name": "Maya",
+                    "id": 81669,
+                    "warp": 5
+                },
+                {
+                    "name": "Alannah",
+                    "id": 81674,
+                    "warp": 5
+                },
+                {
+                    "name": "Yoki Neesh",
+                    "id": 81667,
+                    "warp": 5
+                },
+                {
+                    "name": "Gobbo",
+                    "id": 81666,
+                    "warp": 5
+                },
+                {
+                    "name": "Ceguh",
+                    "id": 1786096059,
+                    "warp": 8
+                },
+                {
+                    "name": "Suqigor",
+                    "id": 827398350,
+                    "warp": 8
+                },
+                {
+                    "name": "Bellas",
+                    "id": 81250,
+                    "warp": 8
+                },
+                {
+                    "name": "Quvolis",
+                    "id": 81634,
+                    "warp": 7
+                },
+                {
+                    "name": "Honsao",
+                    "id": 81641,
+                    "warp": 5
+                },
+                {
+                    "name": "Collep",
+                    "id": 81642,
+                    "warp": 5
+                },
+                {
+                    "name": "Una",
+                    "id": 81668,
+                    "warp": 5
+                },
+                {
+                    "name": "Zonu",
+                    "id": 81670,
+                    "warp": 5
+                },
+                {
+                    "name": "Luca",
+                    "id": 81673,
+                    "warp": 5
+                },
+                {
+                    "name": "Dudu",
+                    "id": 82908,
+                    "warp": 5
+                },
+                {
+                    "name": "Nelve",
+                    "id": 83345,
+                    "warp": 8
+                },
+                {
+                    "name": "Vogum",
+                    "id": 253393601,
+                    "warp": 8
+                },
+                {
+                    "name": "Qubas",
+                    "id": 288654275,
+                    "warp": 8
+                },
+                {
+                    "name": "Kayojui",
+                    "id": 451252032,
+                    "warp": 8
+                },
+                {
+                    "name": "Utoqa",
+                    "id": 659054346,
+                    "warp": 8
+                },
+                {
+                    "name": "Friefra",
+                    "id": 729358569,
+                    "warp": 8
+                }
+            ],
+            "name": "Independent-7.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Nooia",
+                    "id": 750169626,
+                    "warp": 8
+                },
+                {
+                    "name": "Eojur",
+                    "id": 1173652866,
+                    "warp": 7
+                },
+                {
+                    "name": "Uuuuhai",
+                    "id": 1341935964,
+                    "warp": 8
+                },
+                {
+                    "name": "Yesop",
+                    "id": 1422239031,
+                    "warp": 8
+                },
+                {
+                    "name": "Xabek",
+                    "id": 1534156106,
+                    "warp": 8
+                },
+                {
+                    "name": "Veias",
+                    "id": 1709942779,
+                    "warp": 8
+                },
+                {
+                    "name": "Nilkino",
+                    "id": 1910889934,
+                    "warp": 8
+                },
+                {
+                    "name": "Xipox",
+                    "id": 1954730883,
+                    "warp": 8
+                },
+                {
+                    "name": "Zamam",
+                    "id": 2119979509,
+                    "warp": 8
+                }
+            ],
+            "name": "Independent-7.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Dhi'ban",
+                    "id": 1745143614,
+                    "warp": 11
+                },
+                {
+                    "name": "Wasat",
+                    "id": 1911521293,
+                    "warp": 13
+                },
+                {
+                    "name": "Zeta Polis",
+                    "id": 11909028,
+                    "warp": 13
+                },
+                {
+                    "name": "Helvetios",
+                    "id": 1172806400,
+                    "warp": 13
+                },
+                {
+                    "name": "Zaurak",
+                    "id": 601072182,
+                    "warp": 11
+                },
+                {
+                    "name": "Kaus Borealis",
+                    "id": 69523071,
+                    "warp": 13
+                },
+                {
+                    "name": "Azha",
+                    "id": 849541812,
+                    "warp": 13
+                },
+                {
+                    "name": "Laidcenn",
+                    "id": 1107520183,
+                    "warp": 12
+                },
+                {
+                    "name": "Ocus",
+                    "id": 1114669837,
+                    "warp": 12
+                },
+                {
+                    "name": "Kaus Australis",
+                    "id": 1154764176,
+                    "warp": 13
+                },
+                {
+                    "name": "Lycia",
+                    "id": 1203174739,
+                    "warp": 12
+                },
+                {
+                    "name": "Jishui",
+                    "id": 1263278966,
+                    "warp": 13
+                },
+                {
+                    "name": "Todem",
+                    "id": 1357784499,
+                    "warp": 13
+                },
+                {
+                    "name": "Labac",
+                    "id": 1462287177,
+                    "warp": 12
+                },
+                {
+                    "name": "Rakkaus",
+                    "id": 1494550660,
+                    "warp": 12
+                },
+                {
+                    "name": "Kaus Media",
+                    "id": 1591474708,
+                    "warp": 13
+                },
+                {
+                    "name": "Ione",
+                    "id": 1647623234,
+                    "warp": 12
+                },
+                {
+                    "name": "Vindemiatrix",
+                    "id": 1790049115,
+                    "warp": 11
+                },
+                {
+                    "name": "H\u2019ganrem",
+                    "id": 1835140406,
+                    "warp": 12
+                },
+                {
+                    "name": "Araiza",
+                    "id": 2076378378,
+                    "warp": 12
+                }
+            ],
+            "name": "Independent-9",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Alonso",
+                    "id": 283762244,
+                    "warp": 5
+                },
+                {
+                    "name": "Leza",
+                    "id": 667166609,
+                    "warp": 5
+                },
+                {
+                    "name": "Katonda",
+                    "id": 930153285,
+                    "warp": 5
+                },
+                {
+                    "name": "Sual",
+                    "id": 825963253,
+                    "warp": 5
+                },
+                {
+                    "name": "Rosenberg",
+                    "id": 1153115109,
+                    "warp": 5
+                },
+                {
+                    "name": "Cara Beta",
+                    "id": 748005167,
+                    "warp": 5
+                },
+                {
+                    "name": "Ulzar",
+                    "id": 72568276,
+                    "warp": 5
+                },
+                {
+                    "name": "Pyr",
+                    "id": 175361866,
+                    "warp": 5
+                },
+                {
+                    "name": "Mielikki",
+                    "id": 222360364,
+                    "warp": 5
+                },
+                {
+                    "name": "Bernin",
+                    "id": 276621500,
+                    "warp": 5
+                },
+                {
+                    "name": "Kauko",
+                    "id": 452560379,
+                    "warp": 5
+                },
+                {
+                    "name": "Cara Alpha",
+                    "id": 559795005,
+                    "warp": 5
+                },
+                {
+                    "name": "Tapio",
+                    "id": 670982212,
+                    "warp": 5
+                },
+                {
+                    "name": "Maglynn",
+                    "id": 1040185241,
+                    "warp": 5
+                },
+                {
+                    "name": "Ergantal",
+                    "id": 1154653215,
+                    "warp": 5
+                },
+                {
+                    "name": "Duvlock",
+                    "id": 1436783271,
+                    "warp": 5
+                },
+                {
+                    "name": "Cosa",
+                    "id": 1505582693,
+                    "warp": 5
+                },
+                {
+                    "name": "Minnea",
+                    "id": 1608653621,
+                    "warp": 5
+                },
+                {
+                    "name": "Kibuka",
+                    "id": 1740429538,
+                    "warp": 5
+                },
+                {
+                    "name": "Moston",
+                    "id": 1792068830,
+                    "warp": 5
+                },
+                {
+                    "name": "Boniv",
+                    "id": 1847701194,
+                    "warp": 5
+                },
+                {
+                    "name": "Fiadh",
+                    "id": 1905676971,
+                    "warp": 5
+                },
+                {
+                    "name": "Eshu",
+                    "id": 2147089484,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-4",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Junid",
+                    "id": 76335,
+                    "warp": 5
+                },
+                {
+                    "name": "Delbaana",
+                    "id": 76297,
+                    "warp": 5
+                },
+                {
+                    "name": "Soman",
+                    "id": 76296,
+                    "warp": 5
+                },
+                {
+                    "name": "Gomes",
+                    "id": 78022,
+                    "warp": 5
+                },
+                {
+                    "name": "Lanoitan",
+                    "id": 76328,
+                    "warp": 5
+                },
+                {
+                    "name": "Melllvar",
+                    "id": 76321,
+                    "warp": 5
+                },
+                {
+                    "name": "Lotch",
+                    "id": 76340,
+                    "warp": 5
+                },
+                {
+                    "name": "Lyra",
+                    "id": 76330,
+                    "warp": 5
+                },
+                {
+                    "name": "Vatok",
+                    "id": 76338,
+                    "warp": 5
+                },
+                {
+                    "name": "Berebul",
+                    "id": 76342,
+                    "warp": 5
+                },
+                {
+                    "name": "Obbia",
+                    "id": 76295,
+                    "warp": 5
+                },
+                {
+                    "name": "New Sligo",
+                    "id": 76325,
+                    "warp": 5
+                },
+                {
+                    "name": "Colt",
+                    "id": 76329,
+                    "warp": 5
+                },
+                {
+                    "name": "Yerma",
+                    "id": 76332,
+                    "warp": 5
+                },
+                {
+                    "name": "Injerra",
+                    "id": 76334,
+                    "warp": 5
+                },
+                {
+                    "name": "Rabalon",
+                    "id": 76336,
+                    "warp": 5
+                },
+                {
+                    "name": "Dauan",
+                    "id": 76337,
+                    "warp": 5
+                },
+                {
+                    "name": "Orkon",
+                    "id": 76339,
+                    "warp": 5
+                },
+                {
+                    "name": "Laxos",
+                    "id": 76341,
+                    "warp": 5
+                },
+                {
+                    "name": "Hroga",
+                    "id": 76604,
+                    "warp": 5
+                },
+                {
+                    "name": "Zorga",
+                    "id": 76605,
+                    "warp": 5
+                },
+                {
+                    "name": "Wagirur",
+                    "id": 76606,
+                    "warp": 5
+                },
+                {
+                    "name": "Klora",
+                    "id": 77669,
+                    "warp": 5
+                },
+                {
+                    "name": "Vawur",
+                    "id": 78440,
+                    "warp": 5
+                },
+                {
+                    "name": "Vinland",
+                    "id": 78519,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-3.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Takik",
+                    "id": 78520,
+                    "warp": 5
+                },
+                {
+                    "name": "Aker",
+                    "id": 78521,
+                    "warp": 5
+                },
+                {
+                    "name": "Forhingre",
+                    "id": 78651,
+                    "warp": 5
+                },
+                {
+                    "name": "Winber",
+                    "id": 78653,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-3.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Somaochu",
+                    "id": 83386,
+                    "warp": 5
+                },
+                {
+                    "name": "Ellijo",
+                    "id": 83389,
+                    "warp": 5
+                },
+                {
+                    "name": "Tynkar",
+                    "id": 83390,
+                    "warp": 5
+                },
+                {
+                    "name": "Zog",
+                    "id": 584883407,
+                    "warp": 5
+                },
+                {
+                    "name": "Istyna",
+                    "id": 935197920,
+                    "warp": 5
+                },
+                {
+                    "name": "Taleka",
+                    "id": 1127775915,
+                    "warp": 5
+                },
+                {
+                    "name": "Tova",
+                    "id": 1654231988,
+                    "warp": 5
+                },
+                {
+                    "name": "Mesadin",
+                    "id": 1786976742,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-6.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Elva",
+                    "id": 83362,
+                    "warp": 7
+                },
+                {
+                    "name": "Aum",
+                    "id": 83373,
+                    "warp": 5
+                },
+                {
+                    "name": "Luheez",
+                    "id": 81592,
+                    "warp": 5
+                },
+                {
+                    "name": "Grenfil",
+                    "id": 81219,
+                    "warp": 5
+                },
+                {
+                    "name": "Demavar",
+                    "id": 1079232378,
+                    "warp": 5
+                },
+                {
+                    "name": "Robesi",
+                    "id": 884503884,
+                    "warp": 5
+                },
+                {
+                    "name": "Littledove",
+                    "id": 1145122202,
+                    "warp": 5
+                },
+                {
+                    "name": "Lyon",
+                    "id": 1901028317,
+                    "warp": 5
+                },
+                {
+                    "name": "Iaswo",
+                    "id": 92012030,
+                    "warp": 5
+                },
+                {
+                    "name": "Mackers",
+                    "id": 83387,
+                    "warp": 5
+                },
+                {
+                    "name": "Doraboro",
+                    "id": 83388,
+                    "warp": 5
+                },
+                {
+                    "name": "Rozi",
+                    "id": 81005,
+                    "warp": 5
+                },
+                {
+                    "name": "Imgra",
+                    "id": 81085,
+                    "warp": 5
+                },
+                {
+                    "name": "Whinnul",
+                    "id": 81181,
+                    "warp": 5
+                },
+                {
+                    "name": "Mari",
+                    "id": 81593,
+                    "warp": 5
+                },
+                {
+                    "name": "Dignam",
+                    "id": 81594,
+                    "warp": 5
+                },
+                {
+                    "name": "Fostaa",
+                    "id": 81603,
+                    "warp": 5
+                },
+                {
+                    "name": "Liynuk",
+                    "id": 81618,
+                    "warp": 5
+                },
+                {
+                    "name": "Flibble",
+                    "id": 81619,
+                    "warp": 5
+                },
+                {
+                    "name": "Sohkia",
+                    "id": 81622,
+                    "warp": 5
+                },
+                {
+                    "name": "Later",
+                    "id": 81623,
+                    "warp": 5
+                },
+                {
+                    "name": "Donfo",
+                    "id": 83351,
+                    "warp": 5
+                },
+                {
+                    "name": "Weh",
+                    "id": 83353,
+                    "warp": 5
+                },
+                {
+                    "name": "Bulut",
+                    "id": 83376,
+                    "warp": 5
+                },
+                {
+                    "name": "Ethjamar",
+                    "id": 83385,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-6.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Leone",
+                    "id": 1072435433,
+                    "warp": 24
+                },
+                {
+                    "name": "Valance",
+                    "id": 796248417,
+                    "warp": 24
+                },
+                {
+                    "name": "Tombstone",
+                    "id": 1198962565,
+                    "warp": 24
+                },
+                {
+                    "name": "D0D-G",
+                    "id": 1666924692,
+                    "warp": 24
+                },
+                {
+                    "name": "Kuzukoh",
+                    "id": 2043441660,
+                    "warp": 24
+                }
+            ],
+            "name": "Outlaw-1",
+            "space": "Outlaw"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Alacti",
+                    "id": 78023,
+                    "warp": 5
+                },
+                {
+                    "name": "Wokapa",
+                    "id": 78788,
+                    "warp": 5
+                },
+                {
+                    "name": "Maynard",
+                    "id": 78791,
+                    "warp": 5
+                },
+                {
+                    "name": "Odal",
+                    "id": 78792,
+                    "warp": 5
+                },
+                {
+                    "name": "Entrunar",
+                    "id": 78793,
+                    "warp": 5
+                },
+                {
+                    "name": "Cecin",
+                    "id": 79924,
+                    "warp": 5
+                },
+                {
+                    "name": "Xoja",
+                    "id": 79923,
+                    "warp": 5
+                },
+                {
+                    "name": "Ramexik",
+                    "id": 79929,
+                    "warp": 5
+                },
+                {
+                    "name": "Kepp",
+                    "id": 79931,
+                    "warp": 5
+                },
+                {
+                    "name": "Pinikou",
+                    "id": 79921,
+                    "warp": 5
+                },
+                {
+                    "name": "Agrico",
+                    "id": 78790,
+                    "warp": 5
+                },
+                {
+                    "name": "Dolcan",
+                    "id": 78967,
+                    "warp": 5
+                },
+                {
+                    "name": "Aetisan",
+                    "id": 78968,
+                    "warp": 5
+                },
+                {
+                    "name": "Bridford",
+                    "id": 79370,
+                    "warp": 5
+                },
+                {
+                    "name": "Landi",
+                    "id": 79416,
+                    "warp": 5
+                },
+                {
+                    "name": "Bohvanderro",
+                    "id": 79418,
+                    "warp": 5
+                },
+                {
+                    "name": "Calex",
+                    "id": 79497,
+                    "warp": 5
+                },
+                {
+                    "name": "Aoro",
+                    "id": 79500,
+                    "warp": 5
+                },
+                {
+                    "name": "Mulk",
+                    "id": 79631,
+                    "warp": 5
+                },
+                {
+                    "name": "Taoji",
+                    "id": 79632,
+                    "warp": 5
+                },
+                {
+                    "name": "Vinmaier",
+                    "id": 79633,
+                    "warp": 5
+                },
+                {
+                    "name": "Panuq",
+                    "id": 79634,
+                    "warp": 5
+                },
+                {
+                    "name": "Lockred",
+                    "id": 79916,
+                    "warp": 5
+                },
+                {
+                    "name": "Nurt",
+                    "id": 79917,
+                    "warp": 5
+                },
+                {
+                    "name": "Patton",
+                    "id": 79918,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-5.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Resola",
+                    "id": 79928,
+                    "warp": 5
+                },
+                {
+                    "name": "Hessen",
+                    "id": 79930,
+                    "warp": 5
+                },
+                {
+                    "name": "Poservoz",
+                    "id": 79932,
+                    "warp": 5
+                },
+                {
+                    "name": "Lunfa",
+                    "id": 79933,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-5.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Cymon",
+                    "id": 75543,
+                    "warp": 5
+                },
+                {
+                    "name": "Jobe",
+                    "id": 75544,
+                    "warp": 5
+                },
+                {
+                    "name": "Maq",
+                    "id": 75690,
+                    "warp": 5
+                },
+                {
+                    "name": "Feer",
+                    "id": 75694,
+                    "warp": 5
+                },
+                {
+                    "name": "Kerao",
+                    "id": 75697,
+                    "warp": 5
+                },
+                {
+                    "name": "Lyquan",
+                    "id": 75698,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-2.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Eravan",
+                    "id": 76223,
+                    "warp": 5
+                },
+                {
+                    "name": "Alorina",
+                    "id": 74630,
+                    "warp": 5
+                },
+                {
+                    "name": "Didi",
+                    "id": 74631,
+                    "warp": 5
+                },
+                {
+                    "name": "Donnel",
+                    "id": 75692,
+                    "warp": 5
+                },
+                {
+                    "name": "Jeybriol",
+                    "id": 75693,
+                    "warp": 5
+                },
+                {
+                    "name": "Muhen",
+                    "id": 75016,
+                    "warp": 5
+                },
+                {
+                    "name": "Wuver",
+                    "id": 75021,
+                    "warp": 5
+                },
+                {
+                    "name": "Jinnia",
+                    "id": 76222,
+                    "warp": 5
+                },
+                {
+                    "name": "Ruli",
+                    "id": 74128,
+                    "warp": 5
+                },
+                {
+                    "name": "Laurgatt",
+                    "id": 74130,
+                    "warp": 5
+                },
+                {
+                    "name": "Baw",
+                    "id": 74131,
+                    "warp": 5
+                },
+                {
+                    "name": "Flok",
+                    "id": 74244,
+                    "warp": 5
+                },
+                {
+                    "name": "Hosun",
+                    "id": 74246,
+                    "warp": 5
+                },
+                {
+                    "name": "Pimo",
+                    "id": 74308,
+                    "warp": 5
+                },
+                {
+                    "name": "Iora",
+                    "id": 74369,
+                    "warp": 5
+                },
+                {
+                    "name": "Quirad",
+                    "id": 74434,
+                    "warp": 5
+                },
+                {
+                    "name": "Sido",
+                    "id": 74435,
+                    "warp": 5
+                },
+                {
+                    "name": "Mayagrazi",
+                    "id": 74562,
+                    "warp": 5
+                },
+                {
+                    "name": "Beyven",
+                    "id": 74627,
+                    "warp": 5
+                },
+                {
+                    "name": "Sverlov",
+                    "id": 74878,
+                    "warp": 5
+                },
+                {
+                    "name": "Falko",
+                    "id": 74879,
+                    "warp": 5
+                },
+                {
+                    "name": "Skelg",
+                    "id": 75015,
+                    "warp": 5
+                },
+                {
+                    "name": "Khic",
+                    "id": 75018,
+                    "warp": 5
+                },
+                {
+                    "name": "Saqua",
+                    "id": 75019,
+                    "warp": 5
+                },
+                {
+                    "name": "Vemarii",
+                    "id": 75020,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-2.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Barra",
+                    "id": 71714,
+                    "warp": 3
+                },
+                {
+                    "name": "Heima",
+                    "id": 71466,
+                    "warp": 2
+                },
+                {
+                    "name": "Banks",
+                    "id": 71005,
+                    "warp": 1
+                },
+                {
+                    "name": "Izbel",
+                    "id": 71088,
+                    "warp": 1
+                },
+                {
+                    "name": "Boorhi",
+                    "id": 73556,
+                    "warp": 5
+                },
+                {
+                    "name": "Slawlor",
+                    "id": 73555,
+                    "warp": 5
+                },
+                {
+                    "name": "Reelah",
+                    "id": 73488,
+                    "warp": 5
+                },
+                {
+                    "name": "Nidox",
+                    "id": 73559,
+                    "warp": 5
+                },
+                {
+                    "name": "Poja",
+                    "id": 73560,
+                    "warp": 5
+                },
+                {
+                    "name": "Tohvus",
+                    "id": 71905,
+                    "warp": 3
+                },
+                {
+                    "name": "Bo-Jeems",
+                    "id": 71907,
+                    "warp": 3
+                },
+                {
+                    "name": "Soeller",
+                    "id": 71713,
+                    "warp": 3
+                },
+                {
+                    "name": "Dovaler",
+                    "id": 71089,
+                    "warp": 1
+                },
+                {
+                    "name": "Groshi",
+                    "id": 71249,
+                    "warp": 0
+                },
+                {
+                    "name": "Estrada",
+                    "id": 71303,
+                    "warp": 2
+                },
+                {
+                    "name": "Cospilon",
+                    "id": 71399,
+                    "warp": 2
+                },
+                {
+                    "name": "Halkon",
+                    "id": 71464,
+                    "warp": 2
+                },
+                {
+                    "name": "Doma",
+                    "id": 71465,
+                    "warp": 2
+                },
+                {
+                    "name": "Corla",
+                    "id": 71715,
+                    "warp": 3
+                },
+                {
+                    "name": "Follin",
+                    "id": 71892,
+                    "warp": 3
+                },
+                {
+                    "name": "Zanti",
+                    "id": 71906,
+                    "warp": 3
+                },
+                {
+                    "name": "Dalfa",
+                    "id": 72084,
+                    "warp": 3
+                },
+                {
+                    "name": "Benzi",
+                    "id": 72093,
+                    "warp": 3
+                },
+                {
+                    "name": "Yuvaa",
+                    "id": 72116,
+                    "warp": 3
+                },
+                {
+                    "name": "Lipas",
+                    "id": 73561,
+                    "warp": 5
+                }
+            ],
+            "name": "Independent-1.0",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Bodex",
+                    "id": 73854,
+                    "warp": 5
+                },
+                {
+                    "name": "Toshen",
+                    "id": 73857,
+                    "warp": 5
+                },
+                {
+                    "name": "Zukerat",
+                    "id": 73970,
+                    "warp": 5
+                },
+                {
+                    "name": "Melvara",
+                    "id": 74017,
+                    "warp": 3
+                }
+            ],
+            "name": "Independent-1.1",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Caelum",
+                    "id": 669645006,
+                    "warp": 170
+                },
+                {
+                    "name": "Voda",
+                    "id": 1469826967,
+                    "warp": 120
+                },
+                {
+                    "name": "New Calgary",
+                    "id": 1359894210,
+                    "warp": 75
+                },
+                {
+                    "name": "Zosam",
+                    "id": 1777892009,
+                    "warp": 64
+                },
+                {
+                    "name": "Luoman",
+                    "id": 659987486,
+                    "warp": 75
+                },
+                {
+                    "name": "Almango",
+                    "id": 1747522756,
+                    "warp": 75
+                },
+                {
+                    "name": "Enten",
+                    "id": 1795040494,
+                    "warp": 120
+                },
+                {
+                    "name": "Kildare",
+                    "id": 350186389,
+                    "warp": 75
+                },
+                {
+                    "name": "Leebyrn",
+                    "id": 962772086,
+                    "warp": 120
+                },
+                {
+                    "name": "Rua Ri",
+                    "id": 1565041369,
+                    "warp": 75
+                },
+                {
+                    "name": "Ertalwu",
+                    "id": 1627731292,
+                    "warp": 120
+                },
+                {
+                    "name": "Alea",
+                    "id": 1930564350,
+                    "warp": 120
+                }
+            ],
+            "name": "Federation-2",
+            "space": "Federation"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Cynderin",
+                    "id": 1214593821,
+                    "warp": 500
+                },
+                {
+                    "name": "Areal",
+                    "id": 8557317,
+                    "warp": 355
+                },
+                {
+                    "name": "Kreteo",
+                    "id": 1544167937,
+                    "warp": 230
+                },
+                {
+                    "name": "Santheis",
+                    "id": 1951057725,
+                    "warp": 500
+                },
+                {
+                    "name": "Baelos",
+                    "id": 274040896,
+                    "warp": 185
+                },
+                {
+                    "name": "Bairbre",
+                    "id": 808177918,
+                    "warp": 285
+                },
+                {
+                    "name": "Hutch",
+                    "id": 903675622,
+                    "warp": 255
+                }
+            ],
+            "name": "Federation-3",
+            "space": "Federation"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Yutuq",
+                    "id": 2005977996,
+                    "warp": 38
+                },
+                {
+                    "name": "Nitur",
+                    "id": 2033451721,
+                    "warp": 38
+                },
+                {
+                    "name": "Lanaj",
+                    "id": 1032390550,
+                    "warp": 38
+                },
+                {
+                    "name": "Ascher",
+                    "id": 2050638663,
+                    "warp": 26
+                },
+                {
+                    "name": "Xerxes",
+                    "id": 558854731,
+                    "warp": 23
+                },
+                {
+                    "name": "Lo'Uren Co",
+                    "id": 350735951,
+                    "warp": 18
+                },
+                {
+                    "name": "Le'Onor",
+                    "id": 1058489736,
+                    "warp": 18
+                },
+                {
+                    "name": "Zadiaoo",
+                    "id": 1332140800,
+                    "warp": 18
+                },
+                {
+                    "name": "Archer",
+                    "id": 277313528,
+                    "warp": 45
+                },
+                {
+                    "name": "Wolf",
+                    "id": 636398215,
+                    "warp": 40
+                },
+                {
+                    "name": "Kuat",
+                    "id": 152399226,
+                    "warp": 47
+                },
+                {
+                    "name": "Gobuoov",
+                    "id": 77774158,
+                    "warp": 47
+                },
+                {
+                    "name": "Durchman",
+                    "id": 287702734,
+                    "warp": 19
+                },
+                {
+                    "name": "Querlz",
+                    "id": 317030700,
+                    "warp": 19
+                },
+                {
+                    "name": "Barklay",
+                    "id": 454578778,
+                    "warp": 26
+                },
+                {
+                    "name": "P'Jem",
+                    "id": 468245102,
+                    "warp": 20
+                },
+                {
+                    "name": "Inari",
+                    "id": 472409440,
+                    "warp": 26
+                },
+                {
+                    "name": "Sinisser",
+                    "id": 473925134,
+                    "warp": 26
+                },
+                {
+                    "name": "Iezat",
+                    "id": 494468965,
+                    "warp": 23
+                },
+                {
+                    "name": "Iocau",
+                    "id": 502974835,
+                    "warp": 18
+                },
+                {
+                    "name": "Sahqooq",
+                    "id": 797035141,
+                    "warp": 26
+                },
+                {
+                    "name": "Doska",
+                    "id": 1036671379,
+                    "warp": 19
+                },
+                {
+                    "name": "Feqiiep",
+                    "id": 1181581639,
+                    "warp": 47
+                },
+                {
+                    "name": "Gowok",
+                    "id": 1218057507,
+                    "warp": 18
+                },
+                {
+                    "name": "Metea",
+                    "id": 1343179689,
+                    "warp": 19
+                }
+            ],
+            "name": "Federation-1.0",
+            "space": "Federation"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Foaiveb",
+                    "id": 1413597356,
+                    "warp": 18
+                },
+                {
+                    "name": "Mapic",
+                    "id": 1547825221,
+                    "warp": 19
+                },
+                {
+                    "name": "Eagutim",
+                    "id": 1675983977,
+                    "warp": 19
+                },
+                {
+                    "name": "Gemet",
+                    "id": 1710685740,
+                    "warp": 18
+                },
+                {
+                    "name": "Bazamex",
+                    "id": 1881017308,
+                    "warp": 19
+                },
+                {
+                    "name": "Doloran",
+                    "id": 2012746431,
+                    "warp": 26
+                }
+            ],
+            "name": "Federation-1.1",
+            "space": "Federation"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Belmont",
+                    "id": 2119056211,
+                    "warp": 205
+                },
+                {
+                    "name": "Eady",
+                    "id": 985056315,
+                    "warp": 230
+                },
+                {
+                    "name": "Rydania",
+                    "id": 2009845344,
+                    "warp": 500
+                },
+                {
+                    "name": "Bell'eu",
+                    "id": 807157279,
+                    "warp": 320
+                }
+            ],
+            "name": "Independent-12",
+            "space": "Independent"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Jonauer",
+                    "id": 1759717590,
+                    "warp": 18
+                },
+                {
+                    "name": "Woxoxit",
+                    "id": 1101989561,
+                    "warp": 18
+                },
+                {
+                    "name": "Loiat",
+                    "id": 1245655537,
+                    "warp": 19
+                },
+                {
+                    "name": "Laija",
+                    "id": 477613271,
+                    "warp": 19
+                },
+                {
+                    "name": "Iekifog",
+                    "id": 1768514184,
+                    "warp": 40
+                },
+                {
+                    "name": "Piuioab",
+                    "id": 703174915,
+                    "warp": 40
+                },
+                {
+                    "name": "Tiwoqua",
+                    "id": 964152827,
+                    "warp": 40
+                },
+                {
+                    "name": "May'lang",
+                    "id": 417301799,
+                    "warp": 22
+                },
+                {
+                    "name": "Loaiy",
+                    "id": 355503878,
+                    "warp": 19
+                },
+                {
+                    "name": "Ulrich",
+                    "id": 430080081,
+                    "warp": 26
+                },
+                {
+                    "name": "Zizeyab",
+                    "id": 460995644,
+                    "warp": 40
+                },
+                {
+                    "name": "Earokij",
+                    "id": 512746806,
+                    "warp": 40
+                },
+                {
+                    "name": "Yajoy",
+                    "id": 663853879,
+                    "warp": 40
+                },
+                {
+                    "name": "Ebisu",
+                    "id": 776886360,
+                    "warp": 26
+                },
+                {
+                    "name": "Ias",
+                    "id": 975691590,
+                    "warp": 19
+                },
+                {
+                    "name": "Morska",
+                    "id": 1057703933,
+                    "warp": 20
+                },
+                {
+                    "name": "Lipig",
+                    "id": 1146804125,
+                    "warp": 22
+                },
+                {
+                    "name": "BeK",
+                    "id": 1295669729,
+                    "warp": 18
+                },
+                {
+                    "name": "Uikuv",
+                    "id": 1358992189,
+                    "warp": 18
+                },
+                {
+                    "name": "Emie",
+                    "id": 1490400924,
+                    "warp": 26
+                },
+                {
+                    "name": "Izth",
+                    "id": 1566236961,
+                    "warp": 19
+                },
+                {
+                    "name": "Godui",
+                    "id": 1660792724,
+                    "warp": 18
+                },
+                {
+                    "name": "Elequa",
+                    "id": 1694524999,
+                    "warp": 26
+                },
+                {
+                    "name": "Vosak",
+                    "id": 1731519518,
+                    "warp": 19
+                },
+                {
+                    "name": "Tullias",
+                    "id": 1756718205,
+                    "warp": 26
+                }
+            ],
+            "name": "klingon-1.0",
+            "space": "Klingon"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Yadow",
+                    "id": 1780286771,
+                    "warp": 18
+                },
+                {
+                    "name": "Baryn",
+                    "id": 1862365964,
+                    "warp": 18
+                },
+                {
+                    "name": "Enthra",
+                    "id": 1984126753,
+                    "warp": 19
+                },
+                {
+                    "name": "Nurnias",
+                    "id": 2075950099,
+                    "warp": 26
+                }
+            ],
+            "name": "klingon-1.1",
+            "space": "Klingon"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Ja'Corash",
+                    "id": 166663079,
+                    "warp": 64
+                },
+                {
+                    "name": "Klopp",
+                    "id": 563386853,
+                    "warp": 75
+                },
+                {
+                    "name": "Inocula",
+                    "id": 1850602604,
+                    "warp": 75
+                },
+                {
+                    "name": "Erzon'Uk",
+                    "id": 1498922199,
+                    "warp": 120
+                },
+                {
+                    "name": "Nalla",
+                    "id": 1870344143,
+                    "warp": 160
+                },
+                {
+                    "name": "Lu'Kash",
+                    "id": 1575456588,
+                    "warp": 120
+                },
+                {
+                    "name": "T'ong",
+                    "id": 107132824,
+                    "warp": 75
+                },
+                {
+                    "name": "nuHmey veQ",
+                    "id": 199302142,
+                    "warp": 120
+                },
+                {
+                    "name": "Mehg Torr",
+                    "id": 850545148,
+                    "warp": 75
+                },
+                {
+                    "name": "Toh'Kaht",
+                    "id": 1206083632,
+                    "warp": 75
+                },
+                {
+                    "name": "Annalu",
+                    "id": 1378207701,
+                    "warp": 120
+                },
+                {
+                    "name": "Rixos",
+                    "id": 1993626769,
+                    "warp": 120
+                }
+            ],
+            "name": "klingon-2",
+            "space": "Klingon"
+        },
+        {
+            "systems": [
+                {
+                    "name": "Ovelya",
+                    "id": 173688948,
+                    "warp": 500
+                },
+                {
+                    "name": "Astertna",
+                    "id": 600808958,
+                    "warp": 500
+                },
+                {
+                    "name": "Pterodasia",
+                    "id": 466368474,
+                    "warp": 285
+                },
+                {
+                    "name": "Kur'than",
+                    "id": 8006414,
+                    "warp": 400
+                },
+                {
+                    "name": "Magnamia",
+                    "id": 377264362,
+                    "warp": 285
+                },
+                {
+                    "name": "tugh'lI wov",
+                    "id": 1039274191,
+                    "warp": 230
+                },
+                {
+                    "name": "tlhuHwI'",
+                    "id": 1239036932,
+                    "warp": 185
+                }
+            ],
+            "name": "klingon-3",
+            "space": "Klingon"
+        }
+    ]
+}
