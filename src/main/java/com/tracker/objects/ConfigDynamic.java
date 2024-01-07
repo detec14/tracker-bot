@@ -39,7 +39,7 @@ public class ConfigDynamic {
 
     public void addTarget(Target target) {
         if (this.targets.contains(target)) {
-            return;
+            this.targets.remove(target);
         }
         this.targets.add(target);
     }
@@ -57,7 +57,7 @@ public class ConfigDynamic {
 
     public void addTracker(Tracker tracker) {
         if (this.trackers.contains(tracker)) {
-            return;
+            this.trackers.remove(tracker);
         }
         this.trackers.add(tracker);
     }
