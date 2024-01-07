@@ -142,7 +142,6 @@ public class Watcher implements Runnable {
 
         int zonesPerTracker = Integer.min(freeZones.size() / freeTrackers.size(),
             this.config.getDynamic().getTrackerMaxZoneCount());
-        int i = 0;
 
         Collections.shuffle(freeZones);
 
@@ -150,7 +149,17 @@ public class Watcher implements Runnable {
             ArrayList<String> mapNames = this.config.getStatic().getAllZoneMapNames();
             String zones = "";
 
-            for (Zone zone : freeZones.subList(i, i + zonesPerTracker)) {
+            for (int i = 0; i < freeZones.size(); i++) {
+                if (tracker.getZones().size() >= zonesPerTracker) {
+                    break;
+                }
+
+                Zone zone = freeZones.get(i);
+
+                if ((tracker.getWarp() != 0) && (tracker.getWarp() < zone.getWarp())) {
+                    continue;
+                }
+
                 tracker.addZone(zone.getName());
 
                 zones += "- " + zone.getName() + " (" + zone.getNameMap().toUpperCase() + "): ";
@@ -159,15 +168,23 @@ public class Watcher implements Runnable {
                 zones += "\n";
 
                 mapNames.remove(zone.getNameMap());
+                freeZones.remove(i);
+                --i;
             }
-            i += zonesPerTracker;
-            
-            String url = DisplayCommand.getMapUrl() + "/?zone=";
-            url += mapNames.stream().map(Object::toString)
+
+            String msg = "";
+
+            if (tracker.getZones().isEmpty()) {
+                msg = "Either all zones were already assigned or your warp doesn't fit any free zone!\n";
+                msg += "You will be considered again on the next round. Enjoy your free time ;-)";
+            } else {
+                String url = DisplayCommand.getMapUrl() + "/?zone=";
+                url += mapNames.stream().map(Object::toString)
                 .collect(Collectors.joining("&zone="));
-            String msg = this.server.retrieveMemberById(tracker.getId()).complete().getAsMention();
-            msg += ", your assigned zones/systems:\n" + zones;
-            msg += "\nHere the systems map with highlighted zones: " + url;
+                msg = this.server.retrieveMemberById(tracker.getId()).complete().getAsMention();
+                msg += ", your assigned zones/systems:\n" + zones;
+                msg += "\nHere the systems map with highlighted zones: " + url;
+            }
 
             this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
                 .sendMessage(msg).queue();
