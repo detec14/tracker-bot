@@ -34,7 +34,7 @@ public class EnrollmentCommand implements ICommand {
 
         sub.addSubcommands(new SubcommandData(CMD_ENROLL_ENABLE, "Sign-in for player tracking.")
             .addOptions(new OptionData(OptionType.INTEGER, OPT_WARP, "Your maximal warp range.")
-                .setRequired(false))
+                .setRequired(true))
             .addOptions(new OptionData(OptionType.INTEGER, OPT_RUNS_PER_DAY, "The maximal amount of runs you want to do per day.")
                 .setRequired(false))
             .addOptions(new OptionData(OptionType.INTEGER, OPT_OPS, "Your OPS level.")
