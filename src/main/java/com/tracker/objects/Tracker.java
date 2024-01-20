@@ -1,7 +1,6 @@
 package com.tracker.objects;
 
-import java.sql.Timestamp;
-import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -13,7 +12,7 @@ public class Tracker extends Player {
     private int maxRunsPerDay;
     private int ops;
     @JsonProperty("request-time")
-    private Timestamp requestTime;
+    private LocalDateTime requestTime;
     private ArrayList<String> zones;
 
     Tracker() {
@@ -70,12 +69,12 @@ public class Tracker extends Player {
         this.ops = ops;
     }
 
-    public Timestamp getRequestTime() {
+    public LocalDateTime getRequestTime() {
         return this.requestTime;
     }
 
     public void updateRequestTime() {
-        this.requestTime = Timestamp.from(Instant.now());
+        this.requestTime = LocalDateTime.now();
     }
 
     public ArrayList<String> getZones() {

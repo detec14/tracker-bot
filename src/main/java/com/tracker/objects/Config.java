@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 public class Config {
     public static final String CONFIG_PATH = "assets/servers/";
@@ -33,6 +34,8 @@ public class Config {
                     "directory for server " + serverId);
             }
         }
+
+        mapper.registerModule(new JavaTimeModule());
         
         try {
             dynamic = mapper.readValue(new File(configPath + 
@@ -48,6 +51,7 @@ public class Config {
     public void save() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        mapper.registerModule(new JavaTimeModule());
 
         try {
             mapper.writeValue(new File(CONFIG_PATH + this.dynamicConfig.getServer().getId() + 

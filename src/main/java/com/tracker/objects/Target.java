@@ -1,11 +1,10 @@
 package com.tracker.objects;
 
-import java.sql.Timestamp;
-import java.time.Instant;
+import java.time.LocalDateTime;
 
 public class Target extends Player {
     private Boolean spotted;
-    private Timestamp time;
+    private LocalDateTime time;
     private String system;
     private Long tracker;
 
@@ -31,7 +30,7 @@ public class Target extends Player {
         return this.spotted;
     }
 
-    public Timestamp getTime() {
+    public LocalDateTime getTime() {
         return this.time;
     }
 
@@ -45,7 +44,7 @@ public class Target extends Player {
 
     public void setSpotted(String system, Long tracker) {
         this.spotted = true;
-        this.time = Timestamp.from(Instant.now());
+        this.time = LocalDateTime.now();
         this.system = system;
         this.tracker = tracker;
     }

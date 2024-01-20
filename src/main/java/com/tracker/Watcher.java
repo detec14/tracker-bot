@@ -1,9 +1,8 @@
 package com.tracker;
 
-import java.sql.Timestamp;
-import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
@@ -18,13 +17,20 @@ import com.tracker.objects.Zone;
 import net.dv8tion.jda.api.entities.Guild;
 
 public class Watcher implements Runnable {
+    enum RequestMode {
+        FIXED,
+        DYNAMIC
+    }
+
     private final AtomicBoolean running;
+    private LocalTime lastTrackerReqTime;
     private Thread worker;
     private Config config;
     private Guild server;
 
     public Watcher(Config config, Guild server) {
         this.running = new AtomicBoolean(false);
+        this.lastTrackerReqTime = LocalTime.of(0, 0, 0);
         this.config = config;
         this.server = server;
     }
@@ -62,15 +68,14 @@ public class Watcher implements Runnable {
     }
 
     private Boolean refreshTargets() {
-        Calendar calendar = Calendar.getInstance();
         Boolean save = false;
 
         for (Target target : this.config.getDynamic().getTargets()) {
             if (target.isSpotted()) {
-                calendar.setTimeInMillis(target.getTime().getTime());
-                calendar.add(Calendar.MINUTE, this.config.getDynamic().getTargetAegingMinutes());
+                LocalDateTime aeging = target.getTime().plusMinutes(
+                    this.config.getDynamic().getTargetAegingMinutes());
 
-                if (Timestamp.from(Instant.now()).after(new Timestamp(calendar.getTimeInMillis()))) {
+                if (LocalDateTime.now().isAfter(aeging)) {
                     target.clearSpotted();
                     save = true;
                 }
@@ -80,26 +85,54 @@ public class Watcher implements Runnable {
         return save;
     }
 
-    private Boolean requestAction() {
-        Calendar calendar = Calendar.getInstance();
-        Timestamp now = Timestamp.from(Instant.now());
-        ArrayList<Tracker> list = new ArrayList<>();
-
-        for (Tracker tracker : this.config.getDynamic().getTrackers()) {
+    private Boolean requestRequired(Tracker tracker, RequestMode mode) {
+        switch (mode) {
+        case DYNAMIC:
             if (tracker.getRequestTime() == null) {
-                list.add(tracker);
-                continue;
+                return true;
             }
 
-            calendar.setTimeInMillis(tracker.getRequestTime().getTime());
-            calendar.add(Calendar.HOUR, 24 / tracker.getMaxRunsPerDay());
+            LocalDateTime next = tracker.getRequestTime().plusHours(
+                24 / tracker.getMaxRunsPerDay());
 
-            if (now.after(new Timestamp(calendar.getTimeInMillis()))) {
+            if (LocalDateTime.now().isAfter(next)) {
+                return true;
+            }
+
+            break;
+
+        case FIXED:
+            ArrayList<LocalTime> requestTimes = new ArrayList<>() {{
+                add(LocalTime.parse("10:00:00"));
+                add(LocalTime.parse("18:00:00"));
+            }};
+            LocalTime current = LocalTime.now();
+
+            for (LocalTime time : requestTimes) {
+                if (current.isAfter(time.minusMinutes(1)) && current.isBefore(time.plusMinutes(1))) {
+                    return true;
+                }
+            }
+
+            break;
+        }
+
+        return false;
+    }
+
+    private Boolean requestAction() {
+        ArrayList<Tracker> list = new ArrayList<>();
+        RequestMode mode = RequestMode.FIXED;
+
+        for (Tracker tracker : this.config.getDynamic().getTrackers()) {
+            if (requestRequired(tracker, mode)) {
                 list.add(tracker);
             }
         }
 
         if (list.isEmpty()) {
+            return false;
+        } else if ((mode == RequestMode.FIXED) && (LocalTime.now().isBefore(this.lastTrackerReqTime.plusMinutes(15)))) {
             return false;
         }
 
@@ -116,6 +149,8 @@ public class Watcher implements Runnable {
 
         this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
                .sendMessage(msg).queue();
+
+        this.lastTrackerReqTime = LocalTime.now();
 
         return true;
     }
@@ -183,7 +218,7 @@ public class Watcher implements Runnable {
                 .collect(Collectors.joining("&zone="));
                 msg = this.server.retrieveMemberById(tracker.getId()).complete().getAsMention();
                 msg += ", your assigned zones/systems:\n" + zones;
-                msg += "\nHere the systems map with highlighted zones: " + url;
+                msg += "\nHere the systems map with highlighted zones: [View-Map](<" + url + ">)";
             }
 
             this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())

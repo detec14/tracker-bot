@@ -53,24 +53,24 @@ public class DisplayCommand implements ICommand {
     @Override
     public Boolean checkAndRun(SlashCommandInteractionEvent event) {
         switch (event.getSubcommandName()) {
-            case CMD_TRACKERS:
-                sendTrackersSummary(event);
-                break;
+        case CMD_TRACKERS:
+            sendTrackersSummary(event);
+            break;
 
-            case CMD_TARGETS:
-                sendTargetsSummary(event);
-                break;
+        case CMD_TARGETS:
+            sendTargetsSummary(event);
+            break;
 
-            case CMD_SYSTEMS:
-                sendSystemsPicture(event);
-                break;
+        case CMD_SYSTEMS:
+            sendSystemsPicture(event);
+            break;
 
-            case CMD_ZONES:
-                sendZoneSummary(event, event.getOption(OPT_NAME).getAsString());
-                break;
+        case CMD_ZONES:
+            sendZoneSummary(event, event.getOption(OPT_NAME).getAsString());
+            break;
 
-            default:
-                return false;
+        default:
+            return false;
         }
 
         return true;
@@ -144,7 +144,7 @@ public class DisplayCommand implements ICommand {
                 target.getName(), target.isSpotted(),
                 (target.getSystem() == null) ? "-" : target.getSystem(),
                 (target.getTime() == null) ? "-" : DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
-                    .format(target.getTime().toLocalDateTime()));
+                    .format(target.getTime()));
         }
         output += "```";
 
