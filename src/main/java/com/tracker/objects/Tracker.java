@@ -14,6 +14,8 @@ public class Tracker extends Player {
     @JsonProperty("request-time")
     private LocalDateTime requestTime;
     private ArrayList<String> zones;
+    @JsonProperty("reports")
+    private int reportCount;
 
     Tracker() {
         super();
@@ -24,6 +26,7 @@ public class Tracker extends Player {
         this.ops = 0;
         this.requestTime = null;
         this.zones = new ArrayList<>();
+        this.reportCount = 0;
     }
 
     public Tracker(Long id, String name) {
@@ -35,6 +38,7 @@ public class Tracker extends Player {
         this.ops = 0;
         this.requestTime = null;
         this.zones = new ArrayList<>();
+        this.reportCount = 0;
     }
 
     public Long getId() {
@@ -94,6 +98,14 @@ public class Tracker extends Player {
 
     public void clearZones() {
         this.zones.clear();
+    }
+
+    public int getReportCount() {
+        return reportCount;
+    }
+
+    public void incrementReportCount() {
+        this.reportCount++;
     }
 
     @Override

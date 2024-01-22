@@ -52,6 +52,7 @@ public class ConfigDynamic {
         Target target = findTarget(name);
         if (target != null) {
             target.setSpotted(system, tracker.getId());
+            tracker.incrementReportCount();
         }
     }
 

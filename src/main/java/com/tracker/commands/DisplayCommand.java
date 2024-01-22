@@ -99,7 +99,7 @@ public class DisplayCommand implements ICommand {
         String output = "";
 
         output += "```\n";
-        output += "Tracker              Req/Day    Enrolled   Assignment\n";
+        output += "Tracker              Reported   Enrolled   Assignment\n";
         output += "==================== ========== ========== ========================================\n";
         for (Tracker tracker : this.config.getDynamic().getTrackers()) {
             String systems = "";
@@ -121,7 +121,7 @@ public class DisplayCommand implements ICommand {
             List<String> list = SplitString.splitString(systems, 40);
 
             output += String.format("%-20s %-10d %-10s %s\n", 
-                tracker.getName(), tracker.getMaxRunsPerDay(), tracker.isEnrolled(), list.get(0));
+                tracker.getName(), tracker.getReportCount(), tracker.isEnrolled(), list.get(0));
             if (list.size() > 1) {
                 for (String line : list.subList(1, list.size())) {
                     output += String.format("%-42s %s\n", " ", line);
