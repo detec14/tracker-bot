@@ -2,6 +2,7 @@ package com.tracker;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -102,11 +103,11 @@ public class Watcher implements Runnable {
             break;
 
         case FIXED:
-            ArrayList<LocalTime> requestTimes = new ArrayList<>() {{
+            final ArrayList<LocalTime> requestTimes = new ArrayList<>() {{
                 add(LocalTime.parse("10:00:00"));
                 add(LocalTime.parse("18:00:00"));
             }};
-            LocalTime current = LocalTime.now();
+            LocalTime current = LocalTime.now(ZoneId.of("Europe/Berlin"));
 
             for (LocalTime time : requestTimes) {
                 if (current.isAfter(time.minusMinutes(1)) && current.isBefore(time.plusMinutes(1))) {
@@ -123,6 +124,7 @@ public class Watcher implements Runnable {
     private Boolean requestAction() {
         ArrayList<Tracker> list = new ArrayList<>();
         RequestMode mode = RequestMode.FIXED;
+        LocalTime now = LocalTime.now(ZoneId.of("Europe/Berlin"));
 
         for (Tracker tracker : this.config.getDynamic().getTrackers()) {
             if (requestRequired(tracker, mode)) {
@@ -132,7 +134,7 @@ public class Watcher implements Runnable {
 
         if (list.isEmpty()) {
             return false;
-        } else if ((mode == RequestMode.FIXED) && (LocalTime.now().isBefore(this.lastTrackerReqTime.plusMinutes(15)))) {
+        } else if ((mode == RequestMode.FIXED) && (now.isBefore(this.lastTrackerReqTime.plusMinutes(15)))) {
             return false;
         }
 
@@ -150,7 +152,7 @@ public class Watcher implements Runnable {
         this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
                .sendMessage(msg).queue();
 
-        this.lastTrackerReqTime = LocalTime.now();
+        this.lastTrackerReqTime = now;
 
         return true;
     }
