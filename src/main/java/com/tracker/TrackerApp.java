@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
-public class App {
+public class TrackerApp {
     public static void main(String[] args) throws Exception
     {
         Bot bot = Bot.loadConfig();
