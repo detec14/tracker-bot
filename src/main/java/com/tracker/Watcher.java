@@ -1,5 +1,11 @@
 package com.tracker;
 
+import java.io.File;
+import java.io.InputStream;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
@@ -16,6 +22,8 @@ import com.tracker.objects.Tracker;
 import com.tracker.objects.Zone;
 
 import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import net.dv8tion.jda.api.utils.FileUpload;
 
 public class Watcher implements Runnable {
     enum RequestMode {
@@ -57,7 +65,7 @@ public class Watcher implements Runnable {
                 Boolean save = Stream.of(
                     refreshTargets(), requestAction(), assignZones())
                     .reduce(false, Boolean::logicalOr);
-                
+
                 if (save == true) {
                     this.config.save();
                 }
@@ -160,6 +168,27 @@ public class Watcher implements Runnable {
         return true;
     }
 
+    private File getRenderedMap(String urlSuffix) {
+        String reqUrl = "http://stfc-map.iapns.com:3130";
+        String path = "";
+
+        try {
+            HttpClient client = HttpClient.newHttpClient();  
+            HttpRequest request = HttpRequest.newBuilder(URI.create(reqUrl + urlSuffix)).GET().build();  
+            HttpResponse<InputStream> response = client.send(request, HttpResponse.BodyHandlers.ofInputStream());  
+
+            if (response.statusCode() == 200) {
+                path = "/maps/map.png";
+                return new File(path);
+            }
+
+        } catch (Exception e) {
+            System.out.println("Watcher.assignZones: Failed to request rendered map!");
+        }
+
+        return null;
+    }
+
     private Boolean assignZones() {
         ArrayList<Zone> freeZones = new ArrayList<>(this.config.getStatic().getZones());
         ArrayList<Tracker> freeTrackers = new ArrayList<>();
@@ -213,6 +242,7 @@ public class Watcher implements Runnable {
             }
 
             String msg = "";
+            File map = null;
 
             if (tracker.getZones().isEmpty()) {
                 msg = "Either all zones were already assigned or your warp doesn't fit any free zone!\n";
@@ -220,14 +250,23 @@ public class Watcher implements Runnable {
             } else {
                 String url = DisplayCommand.getMapUrl() + "/?zone=";
                 url += mapNames.stream().map(Object::toString)
-                .collect(Collectors.joining("&zone="));
+                    .collect(Collectors.joining("&zone="));
                 msg = this.server.retrieveMemberById(tracker.getId()).complete().getAsMention();
                 msg += ", your assigned zones/systems:\n" + zones;
-                msg += "\nHere the systems map with highlighted zones: [View-Map](<" + url + ">)";
+                
+                map = getRenderedMap(url);
+                if (map != null) {
+                    msg += "\nHere the systems map with highlighted zones:";
+                }
             }
 
-            this.server.getTextChannelById(this.config.getDynamic().getServer().getChannel())
-                .sendMessage(msg).queue();
+            TextChannel channel = this.server.getTextChannelById(this.config.getDynamic()
+                .getServer().getChannel());
+            if (map != null) {
+                channel.sendMessage(msg).addFiles(FileUpload.fromData(map)).queue();
+            } else {
+                channel.sendMessage(msg).queue();
+            }
         }
 
         return true;
