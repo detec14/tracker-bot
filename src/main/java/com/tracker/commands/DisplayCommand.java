@@ -1,14 +1,21 @@
 package com.tracker.commands;
 
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tracker.objects.Config;
 import com.tracker.objects.Target;
 import com.tracker.objects.Tracker;
 import com.tracker.objects.Zone;
+import com.utils.ImageServiceResponse;
 import com.utils.SplitString;
 
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
@@ -185,14 +192,34 @@ public class DisplayCommand implements ICommand {
     }
 
     private void sendSystemsPicture(SlashCommandInteractionEvent event) {
-        event.reply("Check: " + getMapUrl()).queue();
+        event.reply("Command not yet supported!").queue();
     }
 
     private void sendZoneSummary(SlashCommandInteractionEvent event, String zone) {
         sendMessageIntoChannel(generateZoneSummary(zone), event);
     }
 
-    public static String getMapUrl() {
-        return "https://picklemap.000webhostapp.com";
+    public static String generateMapPictureUrl(ArrayList<String> zones) {
+        final String serviceUrl = "http://stfc-map.iapns.com:3130";
+
+        String reqUrl = serviceUrl + "/?zone=" + zones.stream().map(Object::toString)
+            .collect(Collectors.joining(","));
+
+        try {
+            HttpClient client = HttpClient.newHttpClient();  
+            HttpRequest request = HttpRequest.newBuilder(URI.create(reqUrl)).GET().build();  
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());  
+
+            if (response.statusCode() == 200) {
+                ObjectMapper mapper = new ObjectMapper();
+                mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                ImageServiceResponse obj = mapper.readValue(response.body(), ImageServiceResponse.class);
+                return serviceUrl + "/stfc-housing/" + obj.getImageName();
+            }
+        } catch (Exception e) {
+            System.out.println("Watcher.assignZones: Failed to request rendered map!");
+        }
+
+        return null;
     }
 }

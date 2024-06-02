@@ -25,11 +25,10 @@ Create a file called `config.json` containing the token for the bot.
 ```
 
 Now start the container.
-Provide two volume mounts: the `config.json` file and a directory where the map rendering service stores the images (make sure permissions are properly set).
+Be aware that the bot uses an external service to render the STFC galaxy maps (http://stfc-map.iapns.com:3130). If the service is not available, it will only display the system names to be checked.
 
 ```
 ˜# docker run -dti --name bot \
     -v <path-to-config>:/tracker/tracker-bot/assets/config.json \
-    -v <path-to-renderer-output>:/maps \
     tracker-bot:latest
 ```
