@@ -62,8 +62,6 @@ public class Watcher implements Runnable {
                     this.config.save();
                 }
 
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
             } catch (Exception e) {
                 System.out.println("Exception in Watcher thread (" + 
                     e.getMessage() + ")");
